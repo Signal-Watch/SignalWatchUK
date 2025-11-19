@@ -1,0 +1,70 @@
+{
+  "company_number": "00925279",
+  "processed_at": "2025-11-19T20:16:55.852486",
+  "company_name": "N. M. ROTHSCHILD & SONS LIMITED",
+  "company_status": "active",
+  "total_filings": 586,
+  "relevant_filings": 26,
+  "parsed_documents": 8,
+  "mismatches": {
+    "company_number": "00925279",
+    "company_name": "N. M. ROTHSCHILD & SONS LIMITED",
+    "checked_at": "2025-11-19T20:29:07.485285",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "rkvsAzbrmWhtloaa701QvTH-EoJuldvjLYDCpn0buwc.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "ARbrKU0nTfV93-L7wpAjVoT9iDkWqc0B5atk_cUJ5h8.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "SgZRmsnI_kmgqZ6510_ZPGRcBN_cRsHVy_9hVCgsuyA.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "eQAbcHm74Fa_GaCfBkC4PYUkz0FHmS0rxwFoxmQslWk.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "M9eHK_zpAHEnS4yIf1abQXqgcs8CBUNcY9dy5IdAPYU.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "U8JRW7osW2FYjZbQqP02cdxWP3HCpwcGJOmps5bwxNo.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "FJybtJStiVazK3h2XSBujEVChgF4Mhb3OkJwXJ-U3Tg.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "EPic7Mx2nplQbTbi7OF5p2C66srY16J3l72ZoDXU76o.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_metadata": {
+    "company_number": "00925279",
+    "scanned_at": "2025-11-19T20:36:06.421286",
+    "scan_timestamp": "20251119_203606",
+    "version": "1.0"
+  }
+}
