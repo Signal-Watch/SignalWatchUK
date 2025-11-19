@@ -1,0 +1,81 @@
+{
+  "company_number": "00362333",
+  "processed_at": "2025-11-20T00:25:03.079220",
+  "company_name": "KWIK-FIT HOLDINGS LIMITED",
+  "company_status": "active",
+  "total_filings": 407,
+  "relevant_filings": 50,
+  "parsed_documents": 10,
+  "mismatches": {
+    "company_number": "00362333",
+    "company_name": "KWIK-FIT HOLDINGS LIMITED",
+    "checked_at": "2025-11-20T00:26:03.465261",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "JcoR3xngMwCkfLYAd3eA5oUOY0k0U2bQ5GDs18tsN2E.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "LeH49YJutxkF39DeRJJ2JZTCsEBgRyDfj53ZSIoSt_g.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "mLmzVRUCCbbVQrW38AD-MHNyEMLbW9XTPWiKCwGiJX0.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "Aw98LbOeOSKxsmekGI9WUNWkV_LPBNQe-tGnZ4_8OvE.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "dCEkyVNDkU2edsezzcv8qPXOdHSf-GvNqwCwNVgfX5E.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "dz52WEsy1Jew1TBWqBh3G7iAZ2NAkadDs1Q_jE45WoQ.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "rPfiFQZ1rcDU9vU0W-ozYlOqu4lKOF5IIPQg1xljzEs.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "0qAGDuVtcoTVM5qJpSud2qFJcBFCYckj7mX2-IzlFZQ.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "plS_r7oS8flOAIq_UIzQaY9dDrOQlPCi2Ci8N1dBGnY.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "06aaTQNhC6Um4vBde5AzTlknvqdJY8ZxmFSa2vKvk2Y.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Only Active Directors",
+  "_metadata": {
+    "company_number": "00362333",
+    "scanned_at": "2025-11-20T00:26:08.028886",
+    "scan_timestamp": "20251120_002608",
+    "version": "1.0"
+  }
+}
