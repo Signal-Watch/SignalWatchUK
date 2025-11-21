@@ -1,6 +1,6 @@
 {
   "company_number": "00865285",
-  "processed_at": "2025-11-21T16:58:05.453288",
+  "processed_at": "2025-11-21T16:42:14.396108",
   "company_name": "VISTRA LIMITED",
   "company_status": "active",
   "total_filings": 238,
@@ -9,7 +9,7 @@
   "mismatches": {
     "company_number": "00865285",
     "company_name": "VISTRA LIMITED",
-    "checked_at": "2025-11-21T16:59:52.213909",
+    "checked_at": "2025-11-21T16:45:04.728274",
     "mismatches": [],
     "warnings": [
       {
@@ -59,8 +59,8 @@
   "_folder_type": "Directors",
   "_metadata": {
     "company_number": "00865285",
-    "scanned_at": "2025-11-21T17:19:37.327078",
-    "scan_timestamp": "20251121_171937",
+    "scanned_at": "2025-11-21T17:20:04.786849",
+    "scan_timestamp": "20251121_172004",
     "version": "1.0"
   }
 }
