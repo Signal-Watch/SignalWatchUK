@@ -1,0 +1,66 @@
+{
+  "company_number": "00865285",
+  "processed_at": "2025-11-21T15:29:24.298716",
+  "company_name": "VISTRA LIMITED",
+  "company_status": "active",
+  "total_filings": 238,
+  "relevant_filings": 17,
+  "parsed_documents": 7,
+  "mismatches": {
+    "company_number": "00865285",
+    "company_name": "VISTRA LIMITED",
+    "checked_at": "2025-11-21T15:33:17.739425",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "Wxw2kDK1bnzieLaP6zyVmTFWQnRMcgLV6H0NsExH1Lw.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "OrPrGsO4yxN0BHPEKa-m91zNuwuq3LUJtj5xOKgxM-A.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "q1YlG2aNJFljmzj9BIgnYdO1UBkTmsXM9Tlh751KabQ.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "WqWifvLEsi88SLD-jKYUL2hydysIk0aRaao4HAwzzEU.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "9E_KFBVofb52C6mck3XcXe4FV-ys2MgJgXmMSkXrIQA.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "XoSGvJVnNrquYkSeyp1sWCyR9-EEUhHeKDe_zlQJjjo.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "Ni-_mRUfyTKs5yaR-lQ21fVMkMBInH-w_dmlefUseRY.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Only Active Directors",
+  "_metadata": {
+    "company_number": "00865285",
+    "scanned_at": "2025-11-21T15:34:43.819485",
+    "scan_timestamp": "20251121_153443",
+    "version": "1.0"
+  }
+}
