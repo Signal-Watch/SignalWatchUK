@@ -1,0 +1,81 @@
+{
+  "company_number": "05267819",
+  "processed_at": "2025-11-24T18:22:44.693236",
+  "company_name": "THE LONDON ORGANISING COMMITTEE OF THE OLYMPIC GAMES AND PARALYMPIC GAMES LIMITED",
+  "company_status": "dissolved",
+  "total_filings": 138,
+  "relevant_filings": 10,
+  "parsed_documents": 10,
+  "mismatches": {
+    "company_number": "05267819",
+    "company_name": "THE LONDON ORGANISING COMMITTEE OF THE OLYMPIC GAMES AND PARALYMPIC GAMES LIMITED",
+    "checked_at": "2025-11-24T18:23:08.875206",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "CyuJjUB-XFQzz8kdIZcAC1_0Vk31ewHUFwXwBdL7Qmc.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "vRZzi4Mtn_yON33x4r_gllQbByCZSvwBMT7cEDipigM.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "4xeAayHhKxko2t5AiRDBFELqZ8vxYaBJHyaAmkAxFk8.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "EUVamxbSA8cxLOZzOB69jqmmvtTSZ0JQTP917YYyEhg.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "TiDLGJ5hfCIohKvgzoUkjAo6BPVKAvSdsSanjVR0e3Q.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "u9uukeTk5I7TQVZJ69Qsg0G6y6PQRrj2Qt1Cwsz6_ag.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "E9Vnw4lWhXMCU39xdE0DPusYm73k_9IRzZWdX9LdgCU.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "nHWuuSZ5NpsYaPo9W5_78c7m8eNA6dTz-O0Bv_RLPqY.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "x39Sa7pEUBMIU5hH9VuaKqM6dFVKHU5DiWmM9Ly_gnE.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "YpYHKjkyI90Vq-68f0vO-pHfWAW8k6horbeWIbfHwQ4.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Only Active Directors",
+  "_metadata": {
+    "company_number": "05267819",
+    "scanned_at": "2025-11-24T18:23:09.078377",
+    "scan_timestamp": "20251124_182309",
+    "version": "1.0"
+  }
+}
