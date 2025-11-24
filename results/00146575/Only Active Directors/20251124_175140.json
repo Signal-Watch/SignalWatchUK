@@ -1,0 +1,61 @@
+{
+  "company_number": "00146575",
+  "processed_at": "2025-11-24T17:50:00.852417",
+  "company_name": "EXPERIAN FINANCE PLC",
+  "company_status": "active",
+  "total_filings": 1236,
+  "relevant_filings": 83,
+  "parsed_documents": 6,
+  "mismatches": {
+    "company_number": "00146575",
+    "company_name": "EXPERIAN FINANCE PLC",
+    "checked_at": "2025-11-24T17:50:16.509244",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "JiuR908r1PjRpxDkQ7b2eCapRT1U-9Qirle1fFDnkH0.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "1KgdajE2I7fz-SxuOOsgKWZpd-_ZHTspdTchrxwthIk.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "NcHqocucQ9vu2zZRU97WKJVmgtH6NuHk9RbqNq1tUX0.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "eMDqbzVLzIOYq9vuiJ6ZON4s_S6z1xFaMff3EWDRIi4.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "jthX4B4E5nlQGQWuS-6kJdQbfays1vcwqb79Qu6sChc.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "wzvH4N3gBgYgBi0I7YhcxYS1inDEWiw6zENqqgTETgA.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Only Active Directors",
+  "_metadata": {
+    "company_number": "00146575",
+    "scanned_at": "2025-11-24T17:51:40.582354",
+    "scan_timestamp": "20251124_175140",
+    "version": "1.0"
+  }
+}
