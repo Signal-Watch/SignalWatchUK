@@ -1,0 +1,76 @@
+{
+  "company_number": "00535683",
+  "processed_at": "2025-11-24T22:32:59.958239",
+  "company_name": "SLAUGHTER AND MAY LIMITED",
+  "company_status": "active",
+  "total_filings": 655,
+  "relevant_filings": 12,
+  "parsed_documents": 9,
+  "mismatches": {
+    "company_number": "00535683",
+    "company_name": "SLAUGHTER AND MAY LIMITED",
+    "checked_at": "2025-11-24T22:35:00.785467",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "8lHLo7gZiHWcMKG5jftR8WdE6WrN-rFemZyaRFiLsrU.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "d5ZBBlqQQSbtEadyvCVytEt-2xiWw3YsdmLq9Pj8NB8.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "_SCNQwSEVAbJ7iHzEdmwqQCAqqWi-8WgD4Ha8X4GS68.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "tyQnBlYiapM8Ylzey4WsZftmZC7slKoUIip8ALqGF_c.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "iV3Ipk6TqJ7nCXrRea4qWYEgzSj5zAtgziuLo1ewJIY.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "ayUyI0PhEjwvynPrU6Ce928n3TbcKyyTmnbyA56vbdQ.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "8aL2FxXfWsZRFbaN2neNKyOsYCxFIW2RoXGe3YGCayI.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "X7MGam0eTVjzV3VrMjg8fyUPmOEog0wyH-ONXOwEOLo.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "y3C4GSZI9ExZAd4_gkjJ25JFCuU8U4nRmIoDayrZQ5w.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Only Active Directors",
+  "_metadata": {
+    "company_number": "00535683",
+    "scanned_at": "2025-11-24T22:36:09.902450",
+    "scan_timestamp": "20251124_223609",
+    "version": "1.0"
+  }
+}
