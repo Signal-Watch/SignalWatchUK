@@ -1,0 +1,81 @@
+{
+  "company_number": "00076230",
+  "processed_at": "2025-11-24T22:26:46.524483",
+  "company_name": "IDF GROUP LIMITED",
+  "company_status": "dissolved",
+  "total_filings": 730,
+  "relevant_filings": 66,
+  "parsed_documents": 10,
+  "mismatches": {
+    "company_number": "00076230",
+    "company_name": "IDF GROUP LIMITED",
+    "checked_at": "2025-11-24T22:28:46.860892",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "jL5mPkEtjIE-o_JYHm4pMxT3Mw6lOem0muDzUOr0svI.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "f1jMJ5_tDG_z6tQMQLngp-9qfCrt8LanWZhgcgmwmIA.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "k-YP_5vRASIJoSN6a-tCdIYFZPYwqvS6vLKkdXvFIlo.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "HnPCOLnzgZA7GqgnXc_OX9mJUte07NRwtpSNlvopy84.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "nunyQ5TvYs6kG9Fns58imZ6VWJ5iUEwAeIjJx8I2iaQ.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "urQapC3MCT4kRHjKXfDmn_fD6_9Om9oAQKp4YAjCaTE.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "avEoy3bG6skR91XN9G-6dJ79qeE3eq_f3Ockq7N4c5c.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "-pAHw6V0P_iBwpCDY1VTlIrzmmTTVHLc7hrm0DNm6Uc.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "oKqy2G04tqAMFTuv2hydTjwnpEfywIWYyP7VeNZIBLg.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "gv18IQT4hJNgzPQ3dAKGEuJCNDsxCfpzz-aXs47IKNI.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Only Active Directors",
+  "_metadata": {
+    "company_number": "00076230",
+    "scanned_at": "2025-11-24T22:28:52.172885",
+    "scan_timestamp": "20251124_222852",
+    "version": "1.0"
+  }
+}
