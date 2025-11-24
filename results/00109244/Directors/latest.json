@@ -1,0 +1,81 @@
+{
+  "company_number": "00109244",
+  "processed_at": "2025-11-24T18:40:16.807233",
+  "company_name": "THE ARSENAL FOOTBALL CLUB LIMITED",
+  "company_status": "active",
+  "total_filings": 231,
+  "relevant_filings": 31,
+  "parsed_documents": 10,
+  "mismatches": {
+    "company_number": "00109244",
+    "company_name": "THE ARSENAL FOOTBALL CLUB LIMITED",
+    "checked_at": "2025-11-24T18:40:37.188344",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "uvaXhZiHrmRBlhAAGb-3c0vtMFgN52xpeXMvA4EzH64.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "DCLc8S8KHy1GsqkMZsy3LTmF6eqZZRa5mvgmiwMNZn0.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "KKPU8vFMb9RNJhanuC5Wthr3ZekSvzaa09ThVmIvPYA.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "lEvJAwsXx97F38gQrn_YNZC8KqCkbJw1LRbBbQao9ww.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "m2yM10-xsEKltfoXRUZBdQbcwmXjR-rjesx6CNcfq2w.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "cOzBAeLIGpKku5qS8InhzjD5-OXagqDQ6GtiKsMhSLE.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "jToZa0pS3ff6y7XZQSyGM9I1ER7QedyLDIA5l6A59to.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "0USb6e9FkfKDcBCMhjH7pXKqaza2fQL4G3ghuUS_EQQ.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "ifgaHs5uz6812twLAjAUxz-H_LEBdVxFkyNbDPz6N5s.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "VGz5ftxUcPHkOFd8y_962UsMV1h7C7FT373pWXNigHM.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00109244",
+    "scanned_at": "2025-11-24T18:50:59.070447",
+    "scan_timestamp": "20251124_185059",
+    "version": "1.0"
+  }
+}
