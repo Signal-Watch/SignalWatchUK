@@ -1,0 +1,81 @@
+{
+  "company_number": "00302132",
+  "processed_at": "2025-11-24T20:01:37.929818",
+  "company_name": "NATIONAL HOUSING FEDERATION LIMITED",
+  "company_status": "active",
+  "total_filings": 447,
+  "relevant_filings": 20,
+  "parsed_documents": 10,
+  "mismatches": {
+    "company_number": "00302132",
+    "company_name": "NATIONAL HOUSING FEDERATION LIMITED",
+    "checked_at": "2025-11-24T20:01:58.565498",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "QnNiBxKWMZQNZPUXGf6gzYmuW_rBT5UuxjPT-QvAD7Q.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "vQc3g6VQhrALOTS_1u3nxDlbXE4pXRPWiVPngXRmFDE.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "4gl78PnSYTGDvJwydbmTzZmUFgIn8RWF6lVTGDb6voI.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "GKskJLa0uhXLc8KAV6g7OpOzL5APjkhJmmb9Sv7_lrM.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "tLHmbC5Md0M7wLgcgfhP7ZSPIFdpkg6udTogcIAl3z8.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "H2mIdA-JF94PwMpItXaxTDHYUKFNI5mQEP4a-hYlpC4.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "CZ74swTzPNEjtCo6jtcMrPpKMdT8Xant70rVJQAM3Ow.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "2pNIvYBW2RfaOjTZIfOeLi8tU0BgK6Z6aE-NuYJ7y2A.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "_9-ukT9O_Yz4wm3mmaB_0WPLno5MSBjr7QxGuRXdFn8.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "q4U2mbu-c6xApQV3_SBM3VPTy5uKkzsrLsV62w7ZkTs.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Only Active Directors",
+  "_metadata": {
+    "company_number": "00302132",
+    "scanned_at": "2025-11-24T20:02:05.164628",
+    "scan_timestamp": "20251124_200205",
+    "version": "1.0"
+  }
+}
