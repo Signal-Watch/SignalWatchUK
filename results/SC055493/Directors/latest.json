@@ -1,0 +1,76 @@
+{
+  "company_number": "SC055493",
+  "processed_at": "2025-11-25T18:46:09.473469",
+  "company_name": "SCOTTISH HIGHLAND HOTELS LIMITED",
+  "company_status": "dissolved",
+  "total_filings": 249,
+  "relevant_filings": 44,
+  "parsed_documents": 9,
+  "mismatches": {
+    "company_number": "SC055493",
+    "company_name": "SCOTTISH HIGHLAND HOTELS LIMITED",
+    "checked_at": "2025-11-25T18:47:18.896365",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "TOcGhvxqes1XY0TfZffVeo-MNWhXvunFxynaaHlGDe4.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "Io7FVCZX5ifaKie6JCt8QssjiEohfMrxO-vN0V-LFrc.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "rg4ekqWwyGxJzKup93hrrErUwPHpKKJ2RDvyG3cyYm4.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "iIzyab77Qx3E54bEqqr4XaVLa6oLQGm-aZQ_SDNYkUY.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "OIQRsk30P1i_Qt72rJDkiNM-f1vzPcC6bjceEbJQ1aQ.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "AeQopTA35x4hQVTwIpyrBd27ewwc4aoasEUHKectE2M.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "27hncgRSuq6CvERyJ972wEm0_CfFA4B19tYa-1glcf4.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "Gpy6pCIIvJDrjCJo5f2fLdrb7cdhrk0jQJdKjpa2d14.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "jW8TmJLs_I_lJX3MFyOVUXpWZBupDHmuD1IDD1orEYA.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "SC055493",
+    "scanned_at": "2025-11-25T18:53:16.851520",
+    "scan_timestamp": "20251125_185316",
+    "version": "1.0"
+  }
+}
