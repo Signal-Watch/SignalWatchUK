@@ -1,0 +1,81 @@
+{
+  "company_number": "00145140",
+  "processed_at": "2025-11-25T19:07:00.305504",
+  "company_name": "RUSSO-BRITISH CHAMBER OF COMMERCE",
+  "company_status": "active",
+  "total_filings": 197,
+  "relevant_filings": 14,
+  "parsed_documents": 10,
+  "mismatches": {
+    "company_number": "00145140",
+    "company_name": "RUSSO-BRITISH CHAMBER OF COMMERCE",
+    "checked_at": "2025-11-25T19:08:30.796166",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "LJUXfagJ9RY8UWk7bdXZAo74oeijm6p3sp1b7Qk0vrc.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "VjFqjGLCBeSznTeokIhg5njiKnXsgJ3LvuK3m5qyV1M.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "4hn-j0nWrqXYqJwZ8o4hUpauXsy0LQcqHXOYwYDXnKE.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "GruwKLSvrrteslfqDSHvUzGMvHH-hWVG2nG9Z00rCaU.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "UfhN2sNUbR7CyGaVR30SdWBePiFYYxPKYQp85AxhizA.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "3qpJj8_tkzONRzGP6tSuDmSl3mV63lOPukFXauDxDuA.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "x8kyNt5rf4v2mjAAfJBxMpFLfP2IfS0aKoShQuGhNvE.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "PLKV-YS10aA1DngCNk-pPm1-UVCPQmv3PFVc1ZQ4IYY.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "QHkOg-321nq9OPk9_jWU6E5AFtlgiXbANGDS6ufN_CU.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "wN9WgqbPOzjZauwBYUTq3B9qUEv580OYgenEf9y3HyA.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00145140",
+    "scanned_at": "2025-11-25T19:20:06.886894",
+    "scan_timestamp": "20251125_192006",
+    "version": "1.0"
+  }
+}
