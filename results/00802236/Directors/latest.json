@@ -1,0 +1,191 @@
+{
+  "company_number": "00802236",
+  "processed_at": "2025-11-25T23:56:41.069214",
+  "company_name": "BEDFORDSHIRE CHARITABLE TRUST LIMITED",
+  "company_status": "active",
+  "total_filings": 121,
+  "relevant_filings": 9,
+  "parsed_documents": 9,
+  "mismatches": {
+    "company_number": "00802236",
+    "company_name": "BEDFORDSHIRE CHARITABLE TRUST LIMITED",
+    "checked_at": "2025-11-26T00:02:45.513962",
+    "mismatches": [
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "BROADSTONE CONSULTANTS LIMITED",
+        "document": "ZKuxG-er_Rye-qfff1vFVZHvl-Y-5rQREzeYJ81770M.pdf",
+        "document_type": "name_change",
+        "original_name": "BROADSTONE CONSULTANTS LIMITED",
+        "date": null,
+        "message": "Name 'BROADSTONE CONSULTANTS LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "RENEWCO LIMITED",
+        "document": "ZKuxG-er_Rye-qfff1vFVZHvl-Y-5rQREzeYJ81770M.pdf",
+        "document_type": "name_change",
+        "original_name": "RENEWCO LIMITED",
+        "date": null,
+        "message": "Name 'RENEWCO LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "COMPANY NAME BROADSTONE CONSULTANTS LIMITED",
+        "document": "ZKuxG-er_Rye-qfff1vFVZHvl-Y-5rQREzeYJ81770M.pdf",
+        "document_type": "name_change",
+        "original_name": "COMPANY NAME BROADSTONE CONSULTANTS LIMITED",
+        "date": null,
+        "message": "Name 'COMPANY NAME BROADSTONE CONSULTANTS LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "PRIVATE COMPANY LIMITED",
+        "document": "ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf",
+        "document_type": "unknown",
+        "original_name": "PRIVATE COMPANY LIMITED",
+        "date": null,
+        "message": "Name 'PRIVATE COMPANY LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "THAT THE COMPANY BE REREGISTERED AS A PRIVATE COMPANY LIMITED",
+        "document": "ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf",
+        "document_type": "unknown",
+        "original_name": "THAT THE COMPANY BE REREGISTERED AS A PRIVATE COMPANY LIMITED",
+        "date": null,
+        "message": "Name 'THAT THE COMPANY BE REREGISTERED AS A PRIVATE COMPANY LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "THE IBARET TRUST LIMITED",
+        "document": "ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf",
+        "document_type": "unknown",
+        "original_name": "THE IBARET TRUST LIMITED",
+        "date": null,
+        "message": "Name 'THE IBARET TRUST LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "A PRIVATE COMPANY LIMITED",
+        "document": "ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf",
+        "document_type": "unknown",
+        "original_name": "A PRIVATE COMPANY LIMITED",
+        "date": null,
+        "message": "Name 'A PRIVATE COMPANY LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "PRIVATE UNLIMITED",
+        "document": "ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf",
+        "document_type": "unknown",
+        "original_name": "PRIVATE UNLIMITED",
+        "date": null,
+        "message": "Name 'PRIVATE UNLIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "THE IBRETT TRUST LIMITED",
+        "document": "ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf",
+        "document_type": "unknown",
+        "original_name": "THE IBRETT TRUST LIMITED",
+        "date": null,
+        "message": "Name 'THE IBRETT TRUST LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "THE TARGET LIMITED",
+        "document": "1FlOSrjCUMd8q71FMjyTf76dzfDRA9_FMX-fWf8VdjI.pdf",
+        "document_type": "re_registration",
+        "original_name": "THE TARGET LIMITED",
+        "date": null,
+        "message": "Name 'THE TARGET LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "APPLICATION BY A LIMITED COMPANY FOR REREGISTRATION AS A PRIVATE LIMITED",
+        "document": "1FlOSrjCUMd8q71FMjyTf76dzfDRA9_FMX-fWf8VdjI.pdf",
+        "document_type": "re_registration",
+        "original_name": "APPLICATION BY A LIMITED COMPANY FOR REREGISTRATION AS A PRIVATE LIMITED",
+        "date": null,
+        "message": "Name 'APPLICATION BY A LIMITED COMPANY FOR REREGISTRATION AS A PRIVATE LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "ELEGANCE LLP",
+        "document": "1FlOSrjCUMd8q71FMjyTf76dzfDRA9_FMX-fWf8VdjI.pdf",
+        "document_type": "re_registration",
+        "original_name": "ELEGANCE LLP",
+        "date": null,
+        "message": "Name 'ELEGANCE LLP' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "THE COMPANY IS TO BE A PRIVATE COMPANY LIMITED",
+        "document": "9ZwllHmpUamq2y4cx_TsEtf9yLOHagW3jYqHhEzF2-M.pdf",
+        "document_type": "address_change",
+        "original_name": "THE COMPANY IS TO BE A PRIVATE COMPANY LIMITED",
+        "date": null,
+        "message": "Name 'THE COMPANY IS TO BE A PRIVATE COMPANY LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "THE IBBET TRUST UNLIMITED",
+        "document": "cEycc9ovt5bJFRO1wRlKBf_F5dHVjNGNIfyquoOQ6sY.pdf",
+        "document_type": "address_change",
+        "original_name": "THE IBBET TRUST UNLIMITED",
+        "date": null,
+        "message": "Name 'THE IBBET TRUST UNLIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "WATERLOW & SONS LIMITED",
+        "document": "jQ6WAQQf3at0ph9bSkO8A3hU6LsIbre8v7aJyFY7--A.pdf",
+        "document_type": "address_change",
+        "original_name": "WATERLOW & SONS LIMITED",
+        "date": null,
+        "message": "Name 'WATERLOW & SONS LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "THE JERSEY TRUST LIMITED",
+        "document": "jQ6WAQQf3at0ph9bSkO8A3hU6LsIbre8v7aJyFY7--A.pdf",
+        "document_type": "address_change",
+        "original_name": "THE JERSEY TRUST LIMITED",
+        "date": null,
+        "message": "Name 'THE JERSEY TRUST LIMITED' found in filing PDF but NOT in official overview names"
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 16,
+      "name_mismatches": 16,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00802236",
+    "scanned_at": "2025-11-26T00:12:51.321339",
+    "scan_timestamp": "20251126_001251",
+    "version": "1.0"
+  }
+}
