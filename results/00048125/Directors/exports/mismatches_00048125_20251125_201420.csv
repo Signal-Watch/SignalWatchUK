@@ -1,0 +1,6 @@
+Company Number,Company Name,Mismatch Type,Severity,Document,Expected,Found,Confidence,Message
+00048125,"THE RITZ HOTEL, LIMITED",name_mismatch,high,Lx91K2_iGrdOuc8PWhyIou-jVmepL0WpO9RmTyMjhHY.pdf,THE RITZ HOTEL LIMITED,RITZ PARIS HOLDINGS LIMITED,0.347,
+00048125,"THE RITZ HOTEL, LIMITED",name_mismatch,high,Lx91K2_iGrdOuc8PWhyIou-jVmepL0WpO9RmTyMjhHY.pdf,THE RITZ HOTEL LIMITED,RITZ PARISH BUILDINGS LIMITED,0.412,
+00048125,"THE RITZ HOTEL, LIMITED",name_mismatch,medium,Lx91K2_iGrdOuc8PWhyIou-jVmepL0WpO9RmTyMjhHY.pdf,THE RITZ HOTEL LIMITED,RITZ HOLD LIMITED,0.179,
+00048125,"THE RITZ HOTEL, LIMITED",name_mismatch,high,ZgJeB5lut28q1lPquFxP0hu4OUDB5EMlhHDupIuUO_E.pdf,THE RITZ HOTEL LIMITED,PRIVATE COMPANY LIMITED,0.467,
+00048125,"THE RITZ HOTEL, LIMITED",names_in_filings_missing_from_overview,high,,,,,Found 1 name(s) in filing history documents that do NOT appear in the overview/searchable name history section.\n\n=== NAMES IN FILING HISTORY (should be in overview) ===\n\n1. TEST COMPANY LIMITED\n   Found in document(s):\n   - test_document.pdf (incorporation)\n\n=== NAMES IN OVERVIEW SECTION ===\n1. THE RITZ HOTEL LIMITED\n\n⚠️ ISSUE: The names shown above exist in incorporation/name change/re-registration filings but are NOT registered in the searchable name history section.
