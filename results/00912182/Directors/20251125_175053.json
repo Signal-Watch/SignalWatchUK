@@ -1,0 +1,98 @@
+{
+  "company_number": "00912182",
+  "processed_at": "2025-11-25T17:39:17.133466",
+  "company_name": "MOTOROLA SOLUTIONS UK LIMITED",
+  "company_status": "active",
+  "total_filings": 294,
+  "relevant_filings": 28,
+  "parsed_documents": 9,
+  "mismatches": {
+    "company_number": "00912182",
+    "company_name": "MOTOROLA SOLUTIONS UK LIMITED",
+    "checked_at": "2025-11-25T17:39:35.292824",
+    "mismatches": [
+      {
+        "type": "names_in_filings_missing_from_overview",
+        "severity": "high",
+        "message": "Found 1 name(s) in filing history documents that do NOT appear in the overview/searchable name history section.\\n\\n=== NAMES IN FILING HISTORY (should be in overview) ===\\n\\n1. TEST COMPANY LIMITED\\n   Found in document(s):\\n   - test_document.pdf (incorporation)\\n\\n=== NAMES IN OVERVIEW SECTION ===\\n1. MOTOROLA LIMITED\\n2. MOTOROLA SOLUTIONS UK LIMITED\\n\\n⚠️ ISSUE: The names shown above exist in incorporation/name change/re-registration filings but are NOT registered in the searchable name history section.",
+        "missing_count": 1,
+        "missing_names": [
+          "TEST COMPANY LIMITED"
+        ],
+        "documents": [
+          {
+            "name": "TEST COMPANY LIMITED",
+            "found_in_documents": [
+              {
+                "document": "test_document.pdf",
+                "type": "incorporation",
+                "original_name": "TEST COMPANY LIMITED"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "oloD1nEm-86PcWacTEVLqM6b8aglbMduyerhWE69GoI.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "qG9fxnZX97eM6O8Yi9iIneDQlXvbtQGAGZI98_wuhwk.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "OrxcCJZI6ZXPeImxsyuXFk-mOprWPGGi9AI3aLRvye0.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "WHrjbLNgbdpfIVtLso8xs0ABf9lrfR-rq73HgncLkMU.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "cB71phBESAJsYkISfCUWS9GgMpatvi1jkRVLmJoowZg.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "v2-rg31b4LtKou5ldOZvRXldqJfUhFKWUOrzLvZHDcI.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "fWlzFv108pXqGLA1aUFoQXs-74Ox4_4C0D8ihUGl-XI.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "cGyz6aWyf-1NT7g4kwUrbh3aDcxhBijPtTmkpsQRz74.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "ygjvJS0QK7DxveKsinYlrn97X3_CF9sv2A8qJtrE-RQ.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 1,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 1,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00912182",
+    "scanned_at": "2025-11-25T17:50:53.731434",
+    "scan_timestamp": "20251125_175053",
+    "version": "1.0"
+  }
+}
