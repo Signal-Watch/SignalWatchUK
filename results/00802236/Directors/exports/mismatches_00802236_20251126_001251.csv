@@ -1,0 +1,17 @@
+Company Number,Company Name,Mismatch Type,Severity,Document,Expected,Found,Confidence,Message
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ZKuxG-er_Rye-qfff1vFVZHvl-Y-5rQREzeYJ81770M.pdf,,,,Name 'BROADSTONE CONSULTANTS LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ZKuxG-er_Rye-qfff1vFVZHvl-Y-5rQREzeYJ81770M.pdf,,,,Name 'RENEWCO LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ZKuxG-er_Rye-qfff1vFVZHvl-Y-5rQREzeYJ81770M.pdf,,,,Name 'COMPANY NAME BROADSTONE CONSULTANTS LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf,,,,Name 'PRIVATE COMPANY LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf,,,,Name 'THAT THE COMPANY BE REREGISTERED AS A PRIVATE COMPANY LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf,,,,Name 'THE IBARET TRUST LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf,,,,Name 'A PRIVATE COMPANY LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf,,,,Name 'PRIVATE UNLIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,ffhh4zKnYgk-SW1ni1mdBqkQqnOzXwCRD8CgdIDa8Tk.pdf,,,,Name 'THE IBRETT TRUST LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,1FlOSrjCUMd8q71FMjyTf76dzfDRA9_FMX-fWf8VdjI.pdf,,,,Name 'THE TARGET LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,1FlOSrjCUMd8q71FMjyTf76dzfDRA9_FMX-fWf8VdjI.pdf,,,,Name 'APPLICATION BY A LIMITED COMPANY FOR REREGISTRATION AS A PRIVATE LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,1FlOSrjCUMd8q71FMjyTf76dzfDRA9_FMX-fWf8VdjI.pdf,,,,Name 'ELEGANCE LLP' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,9ZwllHmpUamq2y4cx_TsEtf9yLOHagW3jYqHhEzF2-M.pdf,,,,Name 'THE COMPANY IS TO BE A PRIVATE COMPANY LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,cEycc9ovt5bJFRO1wRlKBf_F5dHVjNGNIfyquoOQ6sY.pdf,,,,Name 'THE IBBET TRUST UNLIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,jQ6WAQQf3at0ph9bSkO8A3hU6LsIbre8v7aJyFY7--A.pdf,,,,Name 'WATERLOW & SONS LIMITED' found in filing PDF but NOT in official overview names
+00802236,BEDFORDSHIRE CHARITABLE TRUST LIMITED,name_mismatch,high,jQ6WAQQf3at0ph9bSkO8A3hU6LsIbre8v7aJyFY7--A.pdf,,,,Name 'THE JERSEY TRUST LIMITED' found in filing PDF but NOT in official overview names
