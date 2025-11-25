@@ -1,0 +1,67 @@
+{
+  "company_number": "01293232",
+  "processed_at": "2025-11-25T20:20:22.752813",
+  "company_name": "BRITISH INSURANCE BROKERS' ASSOCIATION",
+  "company_status": "active",
+  "total_filings": 350,
+  "relevant_filings": 10,
+  "parsed_documents": 7,
+  "mismatches": {
+    "company_number": "01293232",
+    "company_name": "BRITISH INSURANCE BROKERS' ASSOCIATION",
+    "checked_at": "2025-11-25T20:23:57.611455",
+    "mismatches": [
+      {
+        "type": "name_mismatch",
+        "severity": "critical",
+        "document": "pesZdr2RHCi5j-Aaan2pIX91AqqBCemTj0LpyEWmTAc.pdf",
+        "expected_names": [
+          "BRITISH INSURANCE BROKERS ASSOCIATION",
+          "BRITISH INSURANCE AND INVESTMENT BROKERS ASSOCIATION",
+          "BRITISH INSURANCE BROKERS ASSOCIATIONTHE",
+          "BRITISH INSURANCE BROKERS ASSOCIATION LIMITED THE"
+        ],
+        "found_name": "PRIVATE COMPANY LIMITED",
+        "best_similarity": 0.389,
+        "confidence": 0.611,
+        "best_match": "BRITISH INSURANCE BROKERS ASSOCIATION"
+      },
+      {
+        "type": "names_in_filings_missing_from_overview",
+        "severity": "high",
+        "message": "Found 1 name(s) in filing history documents that do NOT appear in the overview/searchable name history section.\\n\\n=== NAMES IN FILING HISTORY (should be in overview) ===\\n\\n1. TEST COMPANY LIMITED\\n   Found in document(s):\\n   - test_document.pdf (incorporation)\\n\\n=== NAMES IN OVERVIEW SECTION ===\\n1. BRITISH INSURANCE AND INVESTMENT BROKERS ASSOCIATION\\n2. BRITISH INSURANCE BROKERS ASSOCIATION\\n3. BRITISH INSURANCE BROKERS ASSOCIATION LIMITED THE\\n4. BRITISH INSURANCE BROKERS ASSOCIATIONTHE\\n\\n⚠️ ISSUE: The names shown above exist in incorporation/name change/re-registration filings but are NOT registered in the searchable name history section.",
+        "missing_count": 1,
+        "missing_names": [
+          "TEST COMPANY LIMITED"
+        ],
+        "documents": [
+          {
+            "name": "TEST COMPANY LIMITED",
+            "found_in_documents": [
+              {
+                "document": "test_document.pdf",
+                "type": "incorporation",
+                "original_name": "TEST COMPANY LIMITED"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 2,
+      "name_mismatches": 1,
+      "date_mismatches": 0,
+      "missing_filings": 1,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "01293232",
+    "scanned_at": "2025-11-25T20:49:31.646584",
+    "scan_timestamp": "20251125_204931",
+    "version": "1.0"
+  }
+}
