@@ -1,0 +1,100 @@
+{
+  "company_number": "00048125",
+  "processed_at": "2025-11-25T19:55:40.871746",
+  "company_name": "THE RITZ HOTEL, LIMITED",
+  "company_status": "active",
+  "total_filings": 212,
+  "relevant_filings": 10,
+  "parsed_documents": 8,
+  "mismatches": {
+    "company_number": "00048125",
+    "company_name": "THE RITZ HOTEL, LIMITED",
+    "checked_at": "2025-11-25T19:58:07.140397",
+    "mismatches": [
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "document": "Lx91K2_iGrdOuc8PWhyIou-jVmepL0WpO9RmTyMjhHY.pdf",
+        "expected_names": [
+          "THE RITZ HOTEL LIMITED"
+        ],
+        "found_name": "RITZ PARIS HOLDINGS LIMITED",
+        "best_similarity": 0.653,
+        "confidence": 0.347,
+        "best_match": "THE RITZ HOTEL LIMITED"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "document": "Lx91K2_iGrdOuc8PWhyIou-jVmepL0WpO9RmTyMjhHY.pdf",
+        "expected_names": [
+          "THE RITZ HOTEL LIMITED"
+        ],
+        "found_name": "RITZ PARISH BUILDINGS LIMITED",
+        "best_similarity": 0.588,
+        "confidence": 0.412,
+        "best_match": "THE RITZ HOTEL LIMITED"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "medium",
+        "document": "Lx91K2_iGrdOuc8PWhyIou-jVmepL0WpO9RmTyMjhHY.pdf",
+        "expected_names": [
+          "THE RITZ HOTEL LIMITED"
+        ],
+        "found_name": "RITZ HOLD LIMITED",
+        "best_similarity": 0.821,
+        "confidence": 0.179,
+        "best_match": "THE RITZ HOTEL LIMITED"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "document": "ZgJeB5lut28q1lPquFxP0hu4OUDB5EMlhHDupIuUO_E.pdf",
+        "expected_names": [
+          "THE RITZ HOTEL LIMITED"
+        ],
+        "found_name": "PRIVATE COMPANY LIMITED",
+        "best_similarity": 0.533,
+        "confidence": 0.467,
+        "best_match": "THE RITZ HOTEL LIMITED"
+      },
+      {
+        "type": "names_in_filings_missing_from_overview",
+        "severity": "high",
+        "message": "Found 1 name(s) in filing history documents that do NOT appear in the overview/searchable name history section.\\n\\n=== NAMES IN FILING HISTORY (should be in overview) ===\\n\\n1. TEST COMPANY LIMITED\\n   Found in document(s):\\n   - test_document.pdf (incorporation)\\n\\n=== NAMES IN OVERVIEW SECTION ===\\n1. THE RITZ HOTEL LIMITED\\n\\n⚠️ ISSUE: The names shown above exist in incorporation/name change/re-registration filings but are NOT registered in the searchable name history section.",
+        "missing_count": 1,
+        "missing_names": [
+          "TEST COMPANY LIMITED"
+        ],
+        "documents": [
+          {
+            "name": "TEST COMPANY LIMITED",
+            "found_in_documents": [
+              {
+                "document": "test_document.pdf",
+                "type": "incorporation",
+                "original_name": "TEST COMPANY LIMITED"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 5,
+      "name_mismatches": 4,
+      "date_mismatches": 0,
+      "missing_filings": 1,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00048125",
+    "scanned_at": "2025-11-25T20:14:20.389998",
+    "scan_timestamp": "20251125_201420",
+    "version": "1.0"
+  }
+}
