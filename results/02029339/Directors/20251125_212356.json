@@ -1,0 +1,76 @@
+{
+  "company_number": "02029339",
+  "processed_at": "2025-11-25T21:10:08.915813",
+  "company_name": "NATIONAL ASSOCIATION FOR THE WELFARE OF CHILDREN IN HOSPITAL LIMITED",
+  "company_status": "dissolved",
+  "total_filings": 257,
+  "relevant_filings": 4,
+  "parsed_documents": 4,
+  "mismatches": {
+    "company_number": "02029339",
+    "company_name": "NATIONAL ASSOCIATION FOR THE WELFARE OF CHILDREN IN HOSPITAL LIMITED",
+    "checked_at": "2025-11-25T21:11:10.915312",
+    "mismatches": [
+      {
+        "type": "name_mismatch",
+        "severity": "critical",
+        "document": "8TSYGukGKIos0VmrIvuvQZtD44UX5A31lsa_x_RxQ_k.pdf",
+        "expected_names": [
+          "NATIONAL ASSOCIATION FOR THE WELFARE OF CHILDREN IN HOSPITAL LIMITED"
+        ],
+        "found_name": "STEWART AND LLOYDS LIMITED",
+        "best_similarity": 0.362,
+        "confidence": 0.638,
+        "best_match": "NATIONAL ASSOCIATION FOR THE WELFARE OF CHILDREN IN HOSPITAL LIMITED"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "critical",
+        "document": "8TSYGukGKIos0VmrIvuvQZtD44UX5A31lsa_x_RxQ_k.pdf",
+        "expected_names": [
+          "NATIONAL ASSOCIATION FOR THE WELFARE OF CHILDREN IN HOSPITAL LIMITED"
+        ],
+        "found_name": "STEWART AND LLOYDS LIMITED STEWART AND LLOYDS LIMITED",
+        "best_similarity": 0.281,
+        "confidence": 0.719,
+        "best_match": "NATIONAL ASSOCIATION FOR THE WELFARE OF CHILDREN IN HOSPITAL LIMITED"
+      },
+      {
+        "type": "names_in_filings_missing_from_overview",
+        "severity": "high",
+        "message": "Found 1 name(s) in filing history documents that do NOT appear in the overview/searchable name history section.\\n\\n=== NAMES IN FILING HISTORY (should be in overview) ===\\n\\n1. TEST COMPANY LIMITED\\n   Found in document(s):\\n   - test_document.pdf (incorporation)\\n\\n=== NAMES IN OVERVIEW SECTION ===\\n1. NATIONAL ASSOCIATION FOR THE WELFARE OF CHILDREN IN HOSPITAL LIMITED\\n\\n⚠️ ISSUE: The names shown above exist in incorporation/name change/re-registration filings but are NOT registered in the searchable name history section.",
+        "missing_count": 1,
+        "missing_names": [
+          "TEST COMPANY LIMITED"
+        ],
+        "documents": [
+          {
+            "name": "TEST COMPANY LIMITED",
+            "found_in_documents": [
+              {
+                "document": "test_document.pdf",
+                "type": "incorporation",
+                "original_name": "TEST COMPANY LIMITED"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 3,
+      "name_mismatches": 2,
+      "date_mismatches": 0,
+      "missing_filings": 1,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "02029339",
+    "scanned_at": "2025-11-25T21:23:56.692489",
+    "scan_timestamp": "20251125_212356",
+    "version": "1.0"
+  }
+}
