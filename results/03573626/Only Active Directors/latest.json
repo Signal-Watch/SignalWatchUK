@@ -1,0 +1,30 @@
+{
+  "company_number": "03573626",
+  "processed_at": "2025-11-26T22:33:22.077803",
+  "company_name": "FREESHIRE LIMITED",
+  "company_status": "active",
+  "total_filings": 206,
+  "relevant_filings": 23,
+  "parsed_documents": 8,
+  "mismatches": {
+    "company_number": "03573626",
+    "company_name": "FREESHIRE LIMITED",
+    "checked_at": "2025-11-26T22:34:35.039370",
+    "mismatches": [],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Only Active Directors",
+  "_metadata": {
+    "company_number": "03573626",
+    "scanned_at": "2025-11-26T22:34:35.047553",
+    "scan_timestamp": "20251126_223435",
+    "version": "1.0"
+  }
+}
