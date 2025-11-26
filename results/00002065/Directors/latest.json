@@ -1,0 +1,66 @@
+{
+  "company_number": "00002065",
+  "processed_at": "2025-11-26T22:09:51.747956",
+  "company_name": "LLOYDS BANK PLC",
+  "company_status": "active",
+  "total_filings": 2396,
+  "relevant_filings": 106,
+  "parsed_documents": 10,
+  "mismatches": {
+    "company_number": "00002065",
+    "company_name": "LLOYDS BANK PLC",
+    "checked_at": "2025-11-26T22:11:01.858368",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "e_w-WJBMQGpe1RbdpdY4FjI7CAntX_f2jMxwRx98bkg.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "4aS2ld6IT25QsW3LV0j4HlgJzGmheYsRUNEnkHiZBwA.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "NWMjGDgn2JNKsY_pFlwmBrw67KqvEbaYpBph5OYLXgs.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "Dzy4o05aFmXyhsP0QxKqB6rE7h9vRQ8Bo1V6mT_57tc.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "pgFDR_Ce-L0nnwg87n6AZi5TCC8RwTeTA2A0JQKioFI.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "tYR_FGAQfL-ssaV__FBj73pdfiL0qd7MBbxPTE7qs-k.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "V0sEWBjRygr2E_oM-aOC4ky96MukPKqccJlVVBB6I-E.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00002065",
+    "scanned_at": "2025-11-26T22:19:56.532872",
+    "scan_timestamp": "20251126_221956",
+    "version": "1.0"
+  }
+}
