@@ -1,0 +1,30 @@
+{
+  "company_number": "00087989",
+  "processed_at": "2025-11-26T22:56:00.745826",
+  "company_name": "00087989 LIMITED",
+  "company_status": "liquidation",
+  "total_filings": 60,
+  "relevant_filings": 2,
+  "parsed_documents": 2,
+  "mismatches": {
+    "company_number": "00087989",
+    "company_name": "00087989 LIMITED",
+    "checked_at": "2025-11-26T22:56:25.221336",
+    "mismatches": [],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00087989",
+    "scanned_at": "2025-11-26T22:56:25.461077",
+    "scan_timestamp": "20251126_225625",
+    "version": "1.0"
+  }
+}
