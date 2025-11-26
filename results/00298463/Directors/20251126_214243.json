@@ -1,0 +1,30 @@
+{
+  "company_number": "00298463",
+  "processed_at": "2025-11-26T21:40:17.875846",
+  "company_name": "MAXWELL COMMUNICATION CORPORATION PLC",
+  "company_status": "dissolved",
+  "total_filings": 272,
+  "relevant_filings": 28,
+  "parsed_documents": 1,
+  "mismatches": {
+    "company_number": "00298463",
+    "company_name": "MAXWELL COMMUNICATION CORPORATION PLC",
+    "checked_at": "2025-11-26T21:40:37.445041",
+    "mismatches": [],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00298463",
+    "scanned_at": "2025-11-26T21:42:43.501260",
+    "scan_timestamp": "20251126_214243",
+    "version": "1.0"
+  }
+}
