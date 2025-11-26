@@ -1,0 +1,51 @@
+{
+  "company_number": "01396513",
+  "processed_at": "2025-11-26T21:04:49.550219",
+  "company_name": "ASDA GROUP LIMITED",
+  "company_status": "active",
+  "total_filings": 662,
+  "relevant_filings": 42,
+  "parsed_documents": 10,
+  "mismatches": {
+    "company_number": "01396513",
+    "company_name": "ASDA GROUP LIMITED",
+    "checked_at": "2025-11-26T21:06:01.454469",
+    "mismatches": [],
+    "warnings": [
+      {
+        "type": "parse_failed",
+        "document": "3R1mtdhvv1tLT_mcYDJsdEJYShkkBZ2LRSRMeva8j8M.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "dqn56BI-rPh1WDOHtjuZ4dK0hwYggZhbIo1YQihpkQs.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "0b4NRac3glq64pJV5dzxLTHmMOEDZIwW0b8fRw4jBRM.pdf",
+        "error": "No text could be extracted from document"
+      },
+      {
+        "type": "parse_failed",
+        "document": "ZblMv59svgipwDBAmJr4J7tmq2QxmlfyPc4ZCkqAGig.pdf",
+        "error": "No text could be extracted from document"
+      }
+    ],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "01396513",
+    "scanned_at": "2025-11-26T21:17:33.041170",
+    "scan_timestamp": "20251126_211733",
+    "version": "1.0"
+  }
+}
