@@ -1,0 +1,30 @@
+{
+  "company_number": "00418000",
+  "processed_at": "2025-11-26T20:04:35.350326",
+  "company_name": "INSTITUTE OF MEAT(THE)",
+  "company_status": "dissolved",
+  "total_filings": 144,
+  "relevant_filings": 3,
+  "parsed_documents": 3,
+  "mismatches": {
+    "company_number": "00418000",
+    "company_name": "INSTITUTE OF MEAT(THE)",
+    "checked_at": "2025-11-26T20:06:15.725902",
+    "mismatches": [],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 0,
+      "name_mismatches": 0,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "00418000",
+    "scanned_at": "2025-11-26T20:13:13.731452",
+    "scan_timestamp": "20251126_201313",
+    "version": "1.0"
+  }
+}
