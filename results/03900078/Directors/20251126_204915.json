@@ -1,0 +1,71 @@
+{
+  "company_number": "03900078",
+  "processed_at": "2025-11-26T20:24:39.384424",
+  "company_name": "EVELYN PARTNERS ASSET MANAGEMENT LIMITED",
+  "company_status": "active",
+  "total_filings": 210,
+  "relevant_filings": 15,
+  "parsed_documents": 8,
+  "mismatches": {
+    "company_number": "03900078",
+    "company_name": "EVELYN PARTNERS ASSET MANAGEMENT LIMITED",
+    "checked_at": "2025-11-26T20:27:17.760763",
+    "mismatches": [
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "NAME CHANGED TO EVELYN ASSET MANAGEMENT LIMITED",
+        "document": "idoDviDAYIDj4e4SIiHtA2bZayp9TFB2Mya3FYoFrCw.pdf",
+        "document_type": "director_appointment",
+        "original_name": "NAME CHANGED TO EVELYN ASSET MANAGEMENT LIMITED",
+        "date": null,
+        "message": "Name 'NAME CHANGED TO EVELYN ASSET MANAGEMENT LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "TARMAK LIMITED",
+        "document": "csEzsk5N-y6gQoL8JkWjTOyONMF9R5yBnZmJG4Cx-AY.pdf",
+        "document_type": "name_change",
+        "original_name": "TARMAK LIMITED",
+        "date": null,
+        "message": "Name 'TARMAK LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "PREDATE COMPANY LIMITED",
+        "document": "WDhndoVHv5HxP9iHZUQVUXEl4lRGm1sZKfahGfaeqOI.pdf",
+        "document_type": "unknown",
+        "original_name": "PREDATE COMPANY LIMITED",
+        "date": null,
+        "message": "Name 'PREDATE COMPANY LIMITED' found in filing PDF but NOT in official overview names"
+      },
+      {
+        "type": "name_mismatch",
+        "severity": "high",
+        "filing_name": "FRENEAUX LIMITED",
+        "document": "expJ1S6EMH2hgivNTmXThRaxk-qXJKH9mOVknFBCcnE.pdf",
+        "document_type": "unknown",
+        "original_name": "FRENEAUX LIMITED",
+        "date": null,
+        "message": "Name 'FRENEAUX LIMITED' found in filing PDF but NOT in official overview names"
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "total_mismatches": 4,
+      "name_mismatches": 4,
+      "date_mismatches": 0,
+      "missing_filings": 0,
+      "extra_names": 0
+    }
+  },
+  "_folder_type": "Directors",
+  "_metadata": {
+    "company_number": "03900078",
+    "scanned_at": "2025-11-26T20:49:15.467993",
+    "scan_timestamp": "20251126_204915",
+    "version": "1.0"
+  }
+}
