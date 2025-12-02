@@ -1,0 +1,472 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-badge">🔍 ADVANCED ANALYTICS PLATFORM</div>
+    <h1>Companies House Data Analysis</h1>
+    <p>Scan and analyze UK company data from Companies House. Detect <span class="highlight">name/date mismatches</span> in filing documents and map <span class="highlight">director-linked company networks</span>.</p>
+    <div class="hero-features">
+        <span class="feature-pill">✨ AI-Powered Extraction</span>
+        <span class="feature-pill">🌐 Network Mapping</span>
+        <span class="feature-pill">📊 Mismatch Detection</span>
+        <span class="feature-pill">⚡ Real-time Analysis</span>
+    </div>
+</section>
+
+<div class="container main-content">
+    <div class="scan-section">
+        <div class="card">
+            <h2 class="card-title">Scan Companies</h2>
+            <p class="card-description">Enter company numbers to analyze filing history and detect inconsistencies</p>
+            
+            <form id="scanForm" class="scan-form">
+                <!-- Scan Mode Selection -->
+                <div class="form-group">
+                    <label>Scan Mode</label>
+                    <div style="display: flex; gap: 15px; margin-top: 10px;">
+                        <label class="checkbox-label">
+                            <input type="radio" name="scanMode" value="specific" checked>
+                            <span>Specific Companies</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="scanMode" value="filtered">
+                            <span>Filtered Bulk Scan</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Specific Companies Section -->
+                <div id="specificSection">
+                    <div class="form-group">
+                        <label for="companyNumbers">Company Numbers</label>
+                        <textarea 
+                            id="companyNumbers" 
+                            name="companyNumbers" 
+                            rows="4" 
+                            placeholder="Enter company numbers (one per line or comma-separated)&#10;Example: 00000006, 00000007, 00000008"
+                        ></textarea>
+                        <small class="form-help">Enter Companies House company numbers</small>
+                    </div>
+                </div>
+
+                <!-- Filtered Scan Section -->
+                <div id="filteredSection" style="display: none;">
+                    <div class="form-group">
+                        <label for="filterYear">Incorporation Year Range</label>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <input type="number" id="filterYearFrom" name="filterYearFrom" placeholder="From (e.g., 2000)" min="1850" max="2025" style="flex: 1;">
+                            <span>to</span>
+                            <input type="number" id="filterYearTo" name="filterYearTo" placeholder="To (e.g., 2024)" min="1850" max="2025" style="flex: 1;">
+                        </div>
+                        <small class="form-help">Filter companies by year of incorporation</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filterAlpha">Alphabetical Range</label>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <select id="filterAlphaStart" name="filterAlphaStart" style="flex: 1;">
+                                <option value="">Start...</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="G">G</option>
+                                <option value="H">H</option>
+                                <option value="I">I</option>
+                                <option value="J">J</option>
+                                <option value="K">K</option>
+                                <option value="L">L</option>
+                                <option value="M">M</option>
+                                <option value="N">N</option>
+                                <option value="O">O</option>
+                                <option value="P">P</option>
+                                <option value="Q">Q</option>
+                                <option value="R">R</option>
+                                <option value="S">S</option>
+                                <option value="T">T</option>
+                                <option value="U">U</option>
+                                <option value="V">V</option>
+                                <option value="W">W</option>
+                                <option value="X">X</option>
+                                <option value="Y">Y</option>
+                                <option value="Z">Z</option>
+                            </select>
+                            <span>to</span>
+                            <select id="filterAlphaEnd" name="filterAlphaEnd" style="flex: 1;">
+                                <option value="">End...</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="G">G</option>
+                                <option value="H">H</option>
+                                <option value="I">I</option>
+                                <option value="J">J</option>
+                                <option value="K">K</option>
+                                <option value="L">L</option>
+                                <option value="M">M</option>
+                                <option value="N">N</option>
+                                <option value="O">O</option>
+                                <option value="P">P</option>
+                                <option value="Q">Q</option>
+                                <option value="R">R</option>
+                                <option value="S">S</option>
+                                <option value="T">T</option>
+                                <option value="U">U</option>
+                                <option value="V">V</option>
+                                <option value="W">W</option>
+                                <option value="X">X</option>
+                                <option value="Y">Y</option>
+                                <option value="Z">Z</option>
+                            </select>
+                        </div>
+                        <small class="form-help">Filter companies by starting letter of name (e.g., A-C for all companies starting with A, B, or C)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filterStatus">Company Status</label>
+                        <select id="filterStatus" name="filterStatus">
+                            <option value="">All statuses</option>
+                            <option value="active" selected>Active only</option>
+                            <option value="dissolved">Dissolved only</option>
+                            <option value="liquidation">In liquidation</option>
+                        </select>
+                        <small class="form-help">Filter by company status</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filterLimit">Scan Limit</label>
+                        <input type="number" id="filterLimit" name="filterLimit" value="100" min="1" max="10000" placeholder="100">
+                        <small class="form-help">Maximum number of companies to scan (higher = longer processing time)</small>
+                    </div>
+
+                    <!-- Advanced Filters -->
+                    <div class="form-group">
+                        <label for="filterLocation">Registered Office Address</label>
+                        <input type="text" id="filterLocation" name="filterLocation" placeholder="e.g., London, Manchester, Scotland">
+                        <small class="form-help">Filter by location keywords in registered address</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filterSicCode">Nature of Business (SIC Code)</label>
+                        <input type="text" id="filterSicCode" name="filterSicCode" placeholder="e.g., 62011, 70100">
+                        <small class="form-help">Filter by SIC code (Standard Industrial Classification). Enter single code or comma-separated codes</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Company Type</label>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px;">
+                            <label style="display: flex; align-items: center; gap: 8px; font-weight: normal;">
+                                <input type="checkbox" name="filterCompanyType" value="ltd"> Private Limited Company (Ltd)
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; font-weight: normal;">
+                                <input type="checkbox" name="filterCompanyType" value="plc"> Public Limited Company (PLC)
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; font-weight: normal;">
+                                <input type="checkbox" name="filterCompanyType" value="llp"> Limited Liability Partnership (LLP)
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; font-weight: normal;">
+                                <input type="checkbox" name="filterCompanyType" value="charitable-incorporated-organisation"> Charitable Incorporated Organisation
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; font-weight: normal;">
+                                <input type="checkbox" name="filterCompanyType" value="community-interest-company"> Community Interest Company
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; font-weight: normal;">
+                                <input type="checkbox" name="filterCompanyType" value="scottish-partnership"> Scottish Partnership
+                            </label>
+                        </div>
+                        <small class="form-help">Select one or more company types to include</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filterDissolvedDate">Dissolved Date Range (if status=dissolved)</label>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <input type="date" id="filterDissolvedFrom" name="filterDissolvedFrom" style="flex: 1;">
+                            <span>to</span>
+                            <input type="date" id="filterDissolvedTo" name="filterDissolvedTo" style="flex: 1;">
+                        </div>
+                        <small class="form-help">Filter dissolved companies by dissolution date</small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="scanNetwork" name="scanNetwork">
+                        <span>Scan director networks</span>
+                    </label>
+                    <small class="form-help">Discover connected companies through shared directors</small>
+                </div>
+
+                <div class="form-group" id="networkDepthGroup" style="display: none;">
+                    <label for="networkDepth">Network Depth</label>
+                    <select id="networkDepth" name="networkDepth">
+                        <option value="1">1 level</option>
+                        <option value="2" selected>2 levels</option>
+                        <option value="3">3 levels</option>
+                    </select>
+                    <small class="form-help">How many levels deep to scan (higher = more companies)</small>
+                </div>
+
+                <div class="form-group" id="activeDirectorsGroup" style="display: none;">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="activeDirectorsOnly" name="activeDirectorsOnly" checked>
+                        <span>Active Directors Only</span>
+                    </label>
+                    <small class="form-help">Only scan companies where directors are currently active (not resigned)</small>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="useGitHubCache" name="useGitHubCache" checked>
+                        <span>🗄️ Check GitHub Cache First</span>
+                    </label>
+                    <small class="form-help">If company was already scanned, load results instantly from GitHub instead of re-scanning</small>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="useAI" name="useAI">
+                        <span>Use AI Extraction (Fast)</span>
+                    </label>
+                    <small class="form-help">💰 Enable for 10x faster processing (~$0.02-0.05 per company). Uncheck for free OCR (slow)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="chApiKey">Companies House API Key (Required) <span style="color:#e74c3c;">*</span></label>
+                    <input 
+                        type="password" 
+                        id="chApiKey" 
+                        name="chApiKey" 
+                        placeholder="Your Companies House API key"
+                        required
+                    >
+                    <small class="form-help" style="color:#e74c3c;font-weight:500;">⚠️ Required - You must provide your own API key to use this service</small>
+                    <small class="form-help" style="margin-top:4px;"><a href="https://developer.company-information.service.gov.uk/" target="_blank" style="color:#667eea;text-decoration:none;font-weight:500;">Click here if you don't know how to get or create Companies House API Key →</a></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="xaiApiKey">XAI (Grok) API Key (Optional)</label>
+                    <input 
+                        type="password" 
+                        id="xaiApiKey" 
+                        name="xaiApiKey" 
+                        placeholder="Your XAI API key for AI extraction"
+                    >
+                    <small class="form-help" style="color:#f39c12;font-weight:500;">⚠️ Required if "Use AI Extraction" is enabled (recommended for faster processing)</small>
+                    <small class="form-help" style="margin-top:4px;"><a href="https://x.ai/api" target="_blank" style="color:#667eea;text-decoration:none;font-weight:500;">Click here if you don't know how to get or create XAI (Grok) API Key →</a></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="ocApiKey">OpenCorporates API Key (Optional)</label>
+                    <input 
+                        type="password" 
+                        id="ocApiKey" 
+                        name="ocApiKey" 
+                        placeholder="Your OpenCorporates API key"
+                    >
+                    <small class="form-help">Optional: For shell company detection and subsidiary mapping</small>
+                    <small class="form-help" style="margin-top:4px;"><a href="https://opencorporates.com/" target="_blank" style="color:#667eea;text-decoration:none;font-weight:500;">Click here if you don't know how to get or create OpenCorporates API Key →</a></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="scanBtn">
+                    <span class="btn-text">Start Analysis</span>
+                    <span class="btn-loader" style="display: none;">Processing...</span>
+                </button>
+            </form>
+
+            <div id="scanStatus" class="scan-status" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">📄</div>
+                <h3>Mismatch Detection</h3>
+                <p>Automatically compares company names and dates between official records and filed documents</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">🕸️</div>
+                <h3>Network Mapping</h3>
+                <p>Discovers connections between companies through shared directors and officers</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">📊</div>
+                <h3>Export Options</h3>
+                <p>Generate reports in CSV, JSON, or HTML format for further analysis</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">⚡</div>
+                <h3>Smart Scanning</h3>
+                <p>Rate limit aware processing with checkpoint/resume capability</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="about">
+        <h2>About SignalWatch</h2>
+        <p>
+            SignalWatch is a comprehensive analysis tool for UK company data from Companies House.
+            It helps identify discrepancies in company records and maps corporate networks through
+            director connections.
+        </p>
+        <p>
+            <strong>Features:</strong> AI-powered OCR text extraction, intelligent name/date parsing,
+            mismatch detection, director network discovery, and multiple export formats.
+        </p>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Show/hide network depth and active directors toggle based on checkbox
+    document.getElementById('scanNetwork').addEventListener('change', function() {
+        const isChecked = this.checked;
+        document.getElementById('networkDepthGroup').style.display = isChecked ? 'block' : 'none';
+        document.getElementById('activeDirectorsGroup').style.display = isChecked ? 'block' : 'none';
+    });
+
+    // Handle form submission
+    document.getElementById('scanForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const btn = document.getElementById('scanBtn');
+        const btnText = btn.querySelector('.btn-text');
+        const btnLoader = btn.querySelector('.btn-loader');
+        const statusDiv = document.getElementById('scanStatus');
+        
+        // Disable button
+        btn.disabled = true;
+        btnText.style.display = 'none';
+        btnLoader.style.display = 'inline';
+        
+        // Get form data
+        const scanMode = document.querySelector('input[name="scanMode"]:checked').value;
+        const scanNetwork = document.getElementById('scanNetwork').checked;
+        const networkDepth = parseInt(document.getElementById('networkDepth').value);
+        const activeDirectorsOnly = document.getElementById('activeDirectorsOnly').checked;
+        const useGitHubCache = document.getElementById('useGitHubCache').checked;
+        const useAI = document.getElementById('useAI').checked;
+        const chApiKey = document.getElementById('chApiKey').value;
+        const xaiApiKey = document.getElementById('xaiApiKey').value;
+        const ocApiKey = document.getElementById('ocApiKey').value;
+        
+        let requestData = {
+            scan_mode: scanMode,
+            scan_network: scanNetwork,
+            network_depth: networkDepth,
+            active_directors_only: activeDirectorsOnly,
+            use_github_cache: useGitHubCache,
+            use_ai: useAI,
+            ch_api_key: chApiKey || undefined,
+            xai_api_key: xaiApiKey || undefined,
+            oc_api_key: ocApiKey || undefined
+        };
+        
+        if (scanMode === 'specific') {
+            const companyNumbers = document.getElementById('companyNumbers').value
+                .split(/[\n,]/)
+                .map(n => n.trim())
+                .filter(n => n.length > 0);
+            requestData.company_numbers = companyNumbers;
+            
+            statusDiv.innerHTML = `<p>Processing ${companyNumbers.length} companies...</p>`;
+        } else {
+            // Filtered scan - collect advanced filters
+            const companyTypes = Array.from(document.querySelectorAll('input[name="filterCompanyType"]:checked'))
+                .map(cb => cb.value);
+            
+            requestData.filters = {
+                year_from: document.getElementById('filterYearFrom').value,
+                year_to: document.getElementById('filterYearTo').value,
+                alpha_start: document.getElementById('filterAlphaStart').value,
+                alpha_end: document.getElementById('filterAlphaEnd').value,
+                status: document.getElementById('filterStatus').value,
+                limit: parseInt(document.getElementById('filterLimit').value),
+                location: document.getElementById('filterLocation').value,
+                sic_code: document.getElementById('filterSicCode').value,
+                company_types: companyTypes.length > 0 ? companyTypes : undefined,
+                dissolved_from: document.getElementById('filterDissolvedFrom').value,
+                dissolved_to: document.getElementById('filterDissolvedTo').value
+            };
+            
+            statusDiv.innerHTML = `<p>Searching and processing companies with filters...</p>`;
+        }
+        
+        // Show status
+        statusDiv.style.display = 'block';
+        statusDiv.className = 'scan-status info';
+        
+        try {
+            const response = await fetch('/api/scan', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestData)
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                // If cache data found, show GitHub link
+                if (data.from_github_cache && data.company_number && data.folder_type) {
+                    const githubUrl = `https://github.com/Signal-Watch/signal-watch/tree/main/results/${data.company_number}/${encodeURIComponent(data.folder_type)}`;
+                    
+                    statusDiv.className = 'scan-status success';
+                    statusDiv.innerHTML = `
+                        <p><strong>✅ Found in GitHub Cache!</strong></p>
+                        <p style="margin-top:8px;padding:8px;background:#e3f2fd;border-left:3px solid #2196f3;border-radius:4px;">
+                            📦 <strong>Data already exists</strong> - This company was previously scanned (instant result)
+                        </p>
+                        <a href="${githubUrl}" target="_blank" class="btn btn-primary" style="margin-top:12px;">
+                            🔗 View Results on GitHub
+                        </a>
+                    `;
+                    
+                    return;
+                }
+                
+                // Normal flow - fresh scan
+                statusDiv.className = 'scan-status success';
+                let viewResultsButton = '';
+                
+                // Build button based on scan type
+                if (scanMode === 'single' && data.company_number && data.folder_type) {
+                    const githubUrl = `https://github.com/Signal-Watch/signal-watch/tree/main/results/${data.company_number}/${encodeURIComponent(data.folder_type)}`;
+                    viewResultsButton = `<a href="${githubUrl}" target="_blank" class="btn btn-primary">View Results on GitHub 🔗</a>`;
+                } else {
+                    viewResultsButton = `<a href="/results?id=${data.result_id}" class="btn btn-primary">View Results</a>`;
+                }
+                
+                statusDiv.innerHTML = `
+                    <p><strong>Analysis Complete!</strong></p>
+                    <p>Analyzed ${data.summary.total_companies} companies</p>
+                    <p>Found ${data.summary.total_mismatches} potential issues</p>
+                    ${viewResultsButton}
+                `;
+            } else {
+                throw new Error(data.error || 'Unknown error');
+            }
+            
+        } catch (error) {
+            statusDiv.className = 'scan-status error';
+            statusDiv.innerHTML = `<p><strong>Error:</strong> ${error.message}</p>`;
+        } finally {
+            // Re-enable button
+            btn.disabled = false;
+            btnText.style.display = 'inline';
+            btnLoader.style.display = 'none';
+        }
+    });
+</script>
+{% endblock %}

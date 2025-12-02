@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block title %}Results - SignalWatch{% endblock %}
+
+{% block content %}
+<div class="container main-content">
+    <div class="results-header">
+        <h1>Analysis Results</h1>
+        <div class="results-actions">
+            <button onclick="exportResults('csv')" class="btn btn-secondary">📊 Export CSV</button>
+            <button onclick="exportResults('json')" class="btn btn-secondary">📄 Export JSON</button>
+            <button onclick="exportResults('html')" class="btn btn-primary">📑 Export HTML Report</button>
+            <button onclick="downloadAllPDFs()" class="btn btn-secondary" style="background: #28a745;">📥 Download All PDFs</button>
+        </div>
+    </div>
+
+    <div id="resultsContainer">
+        <div class="loading">Loading results...</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    const resultId = '{{ result_id }}';
+    let resultsData = null;
+
+    async function loadResults() {
+        try {
+            const response = await fetch(`/api/results/${resultId}`);
+            resultsData = await response.json();
+            
+            displayResults(resultsData);
+        } catch (error) {
+            document.getElementById('resultsContainer').innerHTML = `
+                <div class="error-message">
+                    <p>Error loading results: ${error.message}</p>
+                </div>
+            `;
+        }
+    }
+
+    function displayResults(data) {
+        const container = document.getElementById('resultsContainer');
+        
+        // Calculate statistics
+        const totalCompanies = data.results.length;
+        const companiesWithMismatches = data.results.filter(r => 
+            r.mismatches.mismatches.length > 0
+        ).length;
+        const totalMismatches = data.results.reduce((sum, r) => 
+            sum + r.mismatches.mismatches.length, 0
+        );
+        
+        let html = '';
+        
+        // Add cache info banner if data from GitHub
+        if (data.from_github_cache) {
+            html += `
+                <div style="margin-bottom:20px;padding:16px;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:#fff;border-radius:8px;box-shadow:0 4px 6px rgba(0,0,0,0.1);">
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <span style="font-size:24px;">📦</span>
+                        <div>
+                            <strong style="font-size:18px;">Loaded from GitHub Cache</strong>
+                            <p style="margin:4px 0 0 0;opacity:0.9;font-size:14px;">This data was retrieved instantly from a previous scan. No API calls were made.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        html += `
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">${totalCompanies}</div>
+                    <div class="stat-label">Companies Analyzed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${companiesWithMismatches}</div>
+                    <div class="stat-label">With Issues</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${totalMismatches}</div>
+                    <div class="stat-label">Total Issues</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${totalCompanies - companiesWithMismatches}</div>
+                    <div class="stat-label">Clean Records</div>
+                </div>
+            </div>
+            
+            <div class="results-list">
+        `;
+        
+        // Display each company
+        for (const result of data.results) {
+            const mismatches = result.mismatches.mismatches;
+            const hasMismatches = mismatches.length > 0;
+            
+            html += `
+                <div class="company-card ${hasMismatches ? 'has-mismatch' : 'clean'}">
+                    <div class="company-header">
+                        <div>
+                            <div class="company-name">${result.company_name}</div>
+                            <div class="company-number">${result.company_number}</div>
+                        </div>
+                        <div>
+                            ${hasMismatches ? 
+                                `<span class="badge high">${mismatches.length} Issues</span>` :
+                                `<span class="badge success">Clean</span>`
+                            }
+                        </div>
+                    </div>
+            `;
+            
+            if (hasMismatches) {
+                html += '<div class="mismatch-list">';
+                for (const mismatch of mismatches) {
+                    html += `
+                        <div class="mismatch-item">
+                            <div class="mismatch-type">
+                                <span class="badge ${mismatch.severity}">${mismatch.severity}</span>
+                                ${mismatch.type.replace(/_/g, ' ').toUpperCase()}
+                            </div>
+                            <div class="mismatch-detail">Document: ${mismatch.document || 'N/A'}</div>
+                    `;
+                    
+                    if (mismatch.expected_names) {
+                        html += `
+                            <div class="mismatch-detail">Expected: ${mismatch.expected_names.join(', ')}</div>
+                            <div class="mismatch-detail">Found: ${mismatch.found_name}</div>
+                        `;
+                    }
+                    
+                    if (mismatch.expected_date) {
+                        html += `
+                            <div class="mismatch-detail">Expected: ${mismatch.expected_date}</div>
+                            <div class="mismatch-detail">Found: ${mismatch.found_date}</div>
+                        `;
+                    }
+                    
+                    if (mismatch.message) {
+                        html += `<div class="mismatch-detail">${mismatch.message}</div>`;
+                    }
+                    
+                    html += '</div>';
+                }
+                html += '</div>';
+            } else {
+                html += '<div class="success-message">✓ No mismatches detected</div>';
+            }
+            
+            html += '</div>';
+        }
+        
+        html += '</div>';
+        
+        // Network section if available
+        if (data.network) {
+            const stats = data.network.statistics;
+            html += `
+                <div class="section">
+                    <h2>Director Network</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">${stats.total_companies}</div>
+                            <div class="stat-label">Connected Companies</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${stats.total_directors}</div>
+                            <div class="stat-label">Unique Directors</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${stats.total_connections}</div>
+                            <div class="stat-label">Connections</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${stats.depth_reached}</div>
+                            <div class="stat-label">Depth</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        container.innerHTML = html;
+    }
+
+    async function exportResults(format) {
+        window.location.href = `/api/export/${resultId}/${format}`;
+    }
+
+    async function downloadAllPDFs() {
+        if (!resultsData) {
+            alert('Results not loaded yet');
+            return;
+        }
+        
+        // Count parsed documents
+        let totalPDFs = 0;
+        for (const company of resultsData.results) {
+            totalPDFs += company.parsed_documents || 0;
+        }
+        
+        if (totalPDFs === 0) {
+            alert('No PDFs were downloaded during this scan.\\n\\nNote: PDFs are stored in the data folder: D:\\\\signalwatch\\\\data');
+            return;
+        }
+        
+        // Download ZIP file with all PDFs
+        if (confirm(`Download ZIP file with ${totalPDFs} PDF(s)?\\n\\nThis will package all downloaded PDFs into a single ZIP file.`)) {
+            window.location.href = `/api/download-pdfs/${resultId}`;
+        }
+        
+        return;
+        
+        // Old code for reference (filing_history not saved in JSON)
+        const pdfLinks = [];
+        for (const company of resultsData.results) {
+            const filings = company.filing_history || [];
+            for (const filing of filings) {
+                if (filing.links && filing.links.document_metadata) {
+                    const docUrl = `https://find-and-update.company-information.service.gov.uk${filing.links.document_metadata}`;
+                    pdfLinks.push({
+                        company: company.company_number,
+                        description: filing.description,
+                        url: docUrl
+                    });
+                }
+            }
+        }
+        
+        if (pdfLinks.length === 0) {
+            alert('No PDFs found in results');
+            return;
+        }
+        
+        // Create download list
+        const downloadList = pdfLinks.map((link, idx) => 
+            `${idx + 1}. Company ${link.company}: ${link.description}\n   ${link.url}`
+        ).join('\n\n');
+        
+        if (confirm(`Found ${pdfLinks.length} PDFs.\n\nNote: PDFs are stored in the 'data' folder.\n\nWould you like to see the list of PDF links?`)) {
+            // Create a new window with the list
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>PDF Download Links</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; padding: 20px; }
+                        h1 { color: #667eea; }
+                        .pdf-link { margin: 15px 0; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+                        a { color: #667eea; text-decoration: none; }
+                        a:hover { text-decoration: underline; }
+                    </style>
+                </head>
+                <body>
+                    <h1>📥 PDF Download Links (${pdfLinks.length} files)</h1>
+                    <p><strong>Note:</strong> PDFs are already downloaded in your <code>data/</code> folder.</p>
+                    <hr>
+                    ${pdfLinks.map((link, idx) => `
+                        <div class="pdf-link">
+                            <strong>${idx + 1}.</strong> Company: <strong>${link.company}</strong><br>
+                            Description: ${link.description}<br>
+                            <a href="${link.url}" target="_blank">🔗 View PDF</a>
+                        </div>
+                    `).join('')}
+                </body>
+                </html>
+            `);
+        }
+    }
+
+    // Load results on page load
+    loadResults();
+</script>
+{% endblock %}
