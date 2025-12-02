@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: signalwatch-backend
+    env: python
+    region: oregon
+    plan: starter
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    # Gunicorn with 3 hour timeout for deep network scanning and AI extraction
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --timeout 10800 --workers 1 --worker-class sync --log-level info --graceful-timeout 10800
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: FLASK_HOST
+        value: 0.0.0.0
+      - key: FLASK_PORT
+        value: 10000
+      - key: FLASK_DEBUG
+        value: False
+      # Add these in Render Dashboard:
+      # GITHUB_TOKEN (your token)
+      # COMPANIES_HOUSE_API_KEY (users provide via UI)
+      # XAI_API_KEY (users provide via UI)
